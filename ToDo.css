@@ -1,0 +1,187 @@
+body{
+     /* background-image: linear-gradient(to left,#e95e5e,#4144ee, #00cc9c,#ff80d3); */
+     background: #daa52082;
+    /* background-image: url(file:///D:/Web%20Development/Project/note.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   /* align-items: center; */
+    font-family: cursive;
+    height: 100%;
+} 
+
+
+h1{
+    text-align: center;
+    color:#fff;
+
+}
+
+/* .wrapper{
+    width: 500px;
+} */
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    height: 45px;
+}
+
+input, button{
+    border: none;
+    outline: none;
+     
+}
+
+.input-container input{
+     padding: 18px 15px;
+     font-size: 15px;
+     border-top-left-radius: 5px;
+     border-top-left-radius: 5px;
+     width: 320px;
+}
+
+.input-container-button{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+      padding: 16px 25px;
+      font-size: 16px;
+      color: #ff5762;
+      background: #fff;
+}
+.add-button{
+    background: aqua;
+    color: hwb(231 1% 7%);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.input-container button:hover{
+    color: #fff;
+    background: red;
+} 
+
+.todo-container{
+   /* margin-top: 40px ; */
+   padding: 0;
+}
+
+.todo-container .todo{
+    margin: 0 auto;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.todo-container .todo.completed{
+     width: 90%;
+     text-decoration: line-through;
+     color: #7e7e7e;
+     opacity: 0.7;
+}
+
+.todo-container button{
+      padding: 16px;
+      flex: 1;
+      margin: 0;
+}
+
+.todo-container .todo-check{
+      color:#05cf5b;
+      background: #fff;
+      border-left: 2px solid #fff;
+      font-size: 16px;
+}
+
+.todo-container .todo-check:hover{
+     color: #fff;
+     background: #05cf5b;
+     cursor: pointer;
+} 
+
+.todo-container .todo-delete{
+    color: #ff5762;
+    background: #fff;
+    font-size: 16px;
+    border-left: 2px solid #ff5762;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.todo-container .todo-delete:hover{
+    color: #fff;
+    background: #ff5762;
+    cursor: pointer;
+      
+} 
+
+.todo-container .todo li{
+     flex: 10;
+     padding: 16px;
+     list-style-type: name;
+     margin: 0;
+    /* font-size: 1px; */
+    line-height: 1.5;
+    padding-left: 24px;
+}
+.tbl{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.table{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 100%;
+    text-align: right;
+    color: blue;
+    font-weight: 600;
+    margin-top: 5px;
+}
+table tr{
+    text-align: left;
+}
+table tbody{
+    font-size: 1.2rem;
+}
+table tr td:nth-child(2) button i{
+    text-align: center;
+    color: red;
+}
+table tr td:nth-child(3) button i{
+    text-align: center;
+    color: #ff5762;
+}
+table tr td:hover:nth-child(1){
+    color:peru;
+}
+table tr td:nth-child(2):hover button i{
+    color: #345fd4;
+}
+table tr td:nth-child(3):hover button i{
+    color: #98eee2;
+}
+.btn i{
+    margin-right: 7px;
+}
+.edtdlt{
+    background: transparent;
+}
+@media (max-width:767px){
+    .input-container input{
+        width: auto;
+    }
+}
